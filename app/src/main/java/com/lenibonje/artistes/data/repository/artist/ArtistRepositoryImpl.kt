@@ -24,6 +24,7 @@ class ArtistsRepositoryImpl(
             }
 
         }catch (e: Exception){
+            list = listOf()
             Log.d("MyTag", e.message.toString())
         }
 

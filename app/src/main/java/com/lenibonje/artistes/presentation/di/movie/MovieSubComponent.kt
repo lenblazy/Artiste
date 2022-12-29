@@ -1,7 +1,6 @@
 package com.lenibonje.artistes.presentation.di.movie
 
 import com.lenibonje.artistes.presentation.movie.MovieActivity
-import com.lenibonje.artistes.presentation.movie.MovieFragment
 import dagger.Subcomponent
 
 @MovieScope

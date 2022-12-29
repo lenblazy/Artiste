@@ -1,7 +1,6 @@
 package com.lenibonje.artistes.presentation.di.artist
 
 import com.lenibonje.artistes.presentation.artist.ArtistActivity
-import com.lenibonje.artistes.presentation.artist.ArtistFragment
 import dagger.Subcomponent
 
 @ArtistScope

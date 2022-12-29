@@ -26,8 +26,7 @@
             android:name=".presentation.movie.MovieActivity"
             android:exported="false"
             android:parentActivityName=".presentation.MainActivity"
-            android:label="@string/title_activity_movie"
-            android:theme="@style/Theme.Artistes.NoActionBar" />
+            android:label="@string/title_activity_movie" />
         <activity
             android:name=".presentation.MainActivity"
             android:exported="true">
