@@ -83,12 +83,22 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
 
     testImplementation 'junit:junit:4.13.2'
-    // optional - Test helpers for LiveData
-    testImplementation("androidx.arch.core:core-testing:$arch_version")
+    // optional - Test helpers for room db
+    testImplementation "androidx.arch.core:core-testing:$arch_version"
     //test coroutines
     testImplementation "org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.1"
     // simplify test wordings
     testImplementation "com.google.truth:truth:1.1.3"
+    testImplementation 'androidx.test.ext:junit:1.1.4'
+    //roboelectric
+    testImplementation "org.robolectric:robolectric:4.9.2"
+
+    // optional - Test helpers for room db
+    androidTestImplementation "androidx.arch.core:core-testing:$arch_version"
+    //test coroutines
+    androidTestImplementation "org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.1"
+    // simplify test wordings
+    androidTestImplementation "com.google.truth:truth:1.1.3"
     androidTestImplementation 'androidx.test.ext:junit:1.1.4'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0'
 
