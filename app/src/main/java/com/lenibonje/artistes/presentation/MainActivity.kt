@@ -5,6 +5,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.lenibonje.artistes.databinding.ActivityMainBinding
 import com.lenibonje.artistes.presentation.artist.ArtistActivity
+import com.lenibonje.artistes.presentation.customView.CircleView
 import com.lenibonje.artistes.presentation.movie.MovieActivity
 import com.lenibonje.artistes.presentation.tv.TvActivity
 
@@ -15,6 +16,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
+
+//        val circleView = CircleView(this)
         setContentView(binding.root)
 
 
