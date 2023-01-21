@@ -11,7 +11,7 @@ commands:
 jobs:
   solution:
     docker:
-      - image: cimg/base:stable
+      - image: circleci/node:13.8.0
     steps:
       - print_pipeline_id
 
