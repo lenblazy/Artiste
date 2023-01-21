@@ -2,21 +2,25 @@
 # See: https://circleci.com/docs/2.0/configuration-reference
 version: 2.1
 
-# Invoke jobs via workflows
-# See: https://circleci.com/docs/2.0/configuration-reference/#workflows
+commands:
+  print_pipeline_id:
+    description: "A command to print the name of pipeline"
+    parameters:
+      pipe_id:
+        type: string
+        default: $CIRCLE_WORKFLOW_ID 
+    steps:
+      - run: echo << parameters.pipe_id >>
+
 workflows:
-  test-env-vars:
+  exercise:
     jobs:
-      - build
+      - solution
 
 jobs:
-  build:
+  solution:
     docker:
       - image: cimg/base:stable
-    # Add steps to the job
     steps:
-      - checkout
-      - run:
-          name: "Echo my name from environment variables"
-          command: |
-            echo $MY_NAME_VAR
+      - print_pipeline_id
+
